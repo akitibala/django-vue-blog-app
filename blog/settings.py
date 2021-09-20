@@ -47,6 +47,9 @@ INSTALLED_APPS = [
     'rest_framework',
     'backend.apps.BackendConfig',
     'corsheaders',
+    # 'rest_framework.authtoken', # new!
+    # 'rest_auth',
+    # 'oauth2_provider',
 
     # 'watson',
 ]
@@ -73,6 +76,16 @@ CORS_ALLOWED_ORIGIN_REGEXES = [
     'http://localhost:8080/*',
 ]
 ROOT_URLCONF = 'blog.urls'
+
+# REST_FRAMEWORK = {
+#     'DEFAULT_AUTHENTICATION_CLASSES': (
+#                'rest_framework.authentication.TokenAuthentication',
+#     ),
+#     'DEFAULT_PERMISSION_CLASSES':(
+#                 'rest_framework.permissions.IsAuthenticated',
+#     ),
+
+# }
 
 TEMPLATES = [
     {
